@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p>Click the button to sort the array.</p>
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+document.getElementById("demo").innerHTML = fruits;
+function myFunction() {
+    fruits.sort();
+    document.getElementById("demo").innerHTML = fruits;
+}
+</script>
+  </body>
+</html>

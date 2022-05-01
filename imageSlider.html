@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script type="text/javascript">
+    var image1 = new Image();
+    image1.src = "M3.jpg";
+
+    var image2 = new Image();
+    image2.src = "R1.jpg";
+
+    var image3 = new Image();
+    image3.src = "H3.jpg";
+  </script>
+</head>
+
+<body>
+
+
+
+  <img src="club.png" name="slide" width="300" height="300" border="10" />
+  <script>
+    var step = 1;
+
+    function slideit() {
+      document.images.slide.src = eval("image" + step + ".src");
+      if (step < 3) {
+        step++;
+      } else {
+        step = 1;
+      }
+      setTimeout("slideit()", 1000);
+    }
+    slideit();
+  </script>
+</body>
+
+</html>

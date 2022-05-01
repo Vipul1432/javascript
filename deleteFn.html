@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+
+
+  <table border="1" id="mytable">
+
+    <tr>
+      <td>WAD</td>
+      <td><input type="button" value="Delete" onclick="del(this)" /></td>
+      <td>WAD</td>
+      <td><input type="button" value="Delete" onclick="del(this)" /></td>
+      <td>WAD</td>
+      <td><input type="button" value="Delete" onclick="del(this)" /></td>
+
+    </tr>
+
+    <tr>
+      <td>WTP</td>
+      <td><input type="button" value="Delete" onclick="del(this)" /></td>
+      <td>WTP</td>
+      <td><input type="button" value="Delete" onclick="del(this)" /></td>
+      <td>WTP</td>
+      <td><input type="button" value="Delete" onclick="del(this)" /></td>
+    </tr>
+    <tr>
+      <td>VIP</td>
+      <td><input type="button" value="Delete" onclick="del(this)" /></td>
+      <td>VIP</td>
+      <td><input type="button" value="Delete" onclick="del(this)" /></td>
+      <td>VIP</td>
+      <td><input type="button" value="Delete" onclick="del(this)" /></td>
+    </tr>
+    <tr>
+      <td>MAD</td>
+      <td><input type="button" value="Delete" onclick="del(this)" /></td>
+      <td>MAD</td>
+      <td><input type="button" value="Delete" onclick="del(this)" /></td>
+      <td>MAD</td>
+      <td><input type="button" value="Delete" onclick="del(this)" /></td>
+    </tr>
+    <script type="text/javascript">
+      function del(btn) {
+        var i = btn.parentNode.parentNode.rowIndex;
+        document.getElementById("mytable").deleteRow(i);
+      }
+    </script>
+</body>
+
+</html>

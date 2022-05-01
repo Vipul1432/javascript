@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+
+
+  <img src="R1.jpg" height="200" width="200" border="10" />
+  <img src="M3.jpg" height="200" width="200" border="10" />
+
+  <br />
+
+  <input type="button" value="Swap Images" onclick="swapIt()" />
+  <script type="text/javascript">
+    function swapIt() {
+      var a = document.images[0].src;
+      document.images[0].src = document.images[1].src;
+      document.images[1].src = a;
+    }
+  </script>
+
+</body>
+
+</html>

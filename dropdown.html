@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    function removeThis() {
+      x = document.getElementById("mybox");
+      x.remove(x.selectedIndex);
+    }
+  </script>
+
+  <select id="mybox">
+    <option>WAD</option>
+    <option>IS</option>
+    <option>WTP</option>
+    <option>CG</option>
+  </select>
+  <input type="button" value="DeleteThis" onclick="removeThis()" />
+</body>
+
+</html>

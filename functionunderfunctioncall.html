@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+       function makeBar()
+       {
+              var output = "<HR ALIGN='left' WIDTH=400>";
+              document.write(output);
+       }
+    function makeHeader(text, color, size)
+       {
+              var output = "<FONT COLOR='" + color + "' SIZE=" + size + ">" + text + "</FONT>";
+              document.write(output);
+              makeBar();
+       }
+       </script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      makeHeader("JavaScript Examples", "red", "+4")
+      </script>
+  </body>
+</html>
