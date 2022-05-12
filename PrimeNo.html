@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prime no</title>
+</head>
+
+<body>
+    <input type="text" id="Txt">
+    <button type="submit" onclick="primeMover()">prime Number</button>
+    <p id="result"></p>
+    <script>
+        function primeMover(n) {
+            let n = document.getElementById("Txt");
+            var primes = [2];
+            var x = 3;
+            var count = 0;
+            do {
+                for (var y = 2; y < x; y++) {
+                    if (x % y === 0) {
+                        count++;
+                    }
+                }
+                if (count === 0) {
+                    primes.push(x);
+                    x++;
+                } else {
+                    x++;
+                    count = 0;
+                }
+            }
+            while (primes.length < n);
+            return primes[primes.length - 1];
+            document.getElementById("result").innerText = n;
+        }
+    </script>
+</body>
+
+</html>
