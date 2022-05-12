@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Event</title>
+    <style media="screen">
+        .demo {
+            color: #000000;
+        }
+    </style>
+    <script type="text/javascript">
+        function colorBG() {
+            document.getElementById("firstp").style.color = '#ff0000';
+        }
+
+        function colorBG2() {
+            document.getElementById("firstp").style.color = '#000000';
+        }
+    </script>
+</head>
+
+<body>
+    <h3 class="demo" onMouseOver="colorBG(this)" onmouseout="colorBG2(this)" id="firstp">
+        This is heading when mouse is over it color has changed
+    </h3>
+</body>
+
+</html>
